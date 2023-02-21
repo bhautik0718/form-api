@@ -1,0 +1,6 @@
+node_modules/
+config/aws.s3.config.json
+config/aws.ses.config.json
+config/
+package-lock.json
+uploads/

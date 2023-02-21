@@ -1,0 +1,136 @@
+create collection : t_leaves
+ insert below data:
+
+ /* 1 */
+{
+    "_id" : ObjectId("628f57bbd4cf089a46649ace"),
+    "leave_type" : "SL",
+    "leave_name" : "Sick Leave"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("628f57d0d4cf089a46649af1"),
+    "leave_type" : "CL",
+    "leave_name" : "Casual Leave"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("628f57e2d4cf089a46649b0c"),
+    "leave_type" : "COMP",
+    "leave_name" : "Complimentry Off"
+}
+
+
+
+Create Collection: t_applied_leaves
+add data: 
+{
+    "_id" : ObjectId("628f5d6844ab840b7016e335"),
+    "user_id" : ObjectId("5f2d13e89684cc5e96217b99"),
+    "organization_id" : ObjectId("5f2d13d49684cc5e96217b98"),
+    "approver_id" : ObjectId("628f586bd4cf089a46649c18"),
+    "leave_type" : ObjectId("628f57e2d4cf089a46649b0c"),
+    "substitute_employee" : "Sagar",
+    "start_date" : ISODate("2020-08-07T08:42:16.384Z"),
+    "end_date" : ISODate("2020-08-07T08:42:16.384Z"),
+    "mobile_number" : "93776903748",
+    "reason" : "sick",
+    "status" : "PENDING",
+    "created_at" : ISODate("2022-05-26T10:58:48.201Z"),
+    "updated_at" : ISODate("2022-05-26T10:58:48.201Z")
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("628f5dba5b6f0c49004957b5"),
+    "user_id" : ObjectId("5f2d13e89684cc5e96217b99"),
+    "organization_id" : ObjectId("5f2d13d49684cc5e96217b98"),
+    "approver_id" : ObjectId("628f586bd4cf089a46649c18"),
+    "leave_type" : ObjectId("628f57e2d4cf089a46649b0c"),
+    "substitute_employee" : "Sagar",
+    "start_date" : ISODate("2020-08-07T08:42:16.384Z"),
+    "end_date" : ISODate("2020-08-07T08:42:16.384Z"),
+    "mobile_number" : "93776903748",
+    "reason" : "sick leave",
+    "status" : "PENDING",
+    "created_at" : ISODate("2022-05-26T11:00:10.920Z"),
+    "updated_at" : ISODate("2022-05-26T11:00:10.920Z")
+}
+
+
+
+create collection: t_organization_users
+add below entry:
+
+{
+    "_id" : ObjectId("628f584bd4cf089a46649bee"),
+    "phone_number" : "1231231232",
+    "roles" : [ 
+        ObjectId("6079aa110906cd3c2467ec13")
+    ],
+    "is_default" : true,
+    "is_active" : true,
+    "is_archive" : false,
+    "name" : "test1",
+    "email" : "test1@gmail.com",
+    "organization_id" : ObjectId("5f2d13d49684cc5e96217b98"),
+    "password" : "827ccb0eea8a706c4c34a16891f84e7b",
+    "created_at" : ISODate("2020-08-07T08:42:16.384Z"),
+    "updated_at" : ISODate("2021-04-16T17:08:40.938Z"),
+    "last_access_at" : ISODate("2022-05-26T10:03:03.017Z"),
+    "first_name" : "test1",
+    "last_name" : "test1",
+    "user_type" : "APPROVER",
+    "middle_name" : "",
+    "profile_image" : "1612193911139.5085.jpg"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("628f585bd4cf089a46649c02"),
+    "phone_number" : "1231231232",
+    "roles" : [ 
+        ObjectId("6079aa110906cd3c2467ec13")
+    ],
+    "is_default" : true,
+    "is_active" : true,
+    "is_archive" : false,
+    "name" : "test2",
+    "email" : "test2@gmail.com",
+    "organization_id" : ObjectId("5f2d13d49684cc5e96217b98"),
+    "password" : "827ccb0eea8a706c4c34a16891f84e7b",
+    "created_at" : ISODate("2020-08-07T08:42:16.384Z"),
+    "updated_at" : ISODate("2021-04-16T17:08:40.938Z"),
+    "last_access_at" : ISODate("2022-05-26T10:03:03.017Z"),
+    "first_name" : "test2",
+    "last_name" : "test2",
+    "user_type" : "APPROVER",
+    "middle_name" : "",
+    "profile_image" : "1612193911139.5085.jpg"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("628f586bd4cf089a46649c18"),
+    "phone_number" : "1231231232",
+    "roles" : [ 
+        ObjectId("6079aa110906cd3c2467ec13")
+    ],
+    "is_default" : true,
+    "is_active" : true,
+    "is_archive" : false,
+    "name" : "test3",
+    "email" : "test3@gmail.com",
+    "organization_id" : ObjectId("5f2d13d49684cc5e96217b98"),
+    "password" : "827ccb0eea8a706c4c34a16891f84e7b",
+    "created_at" : ISODate("2020-08-07T08:42:16.384Z"),
+    "updated_at" : ISODate("2021-04-16T17:08:40.938Z"),
+    "last_access_at" : ISODate("2022-05-26T10:03:03.017Z"),
+    "first_name" : "test3",
+    "last_name" : "test3",
+    "user_type" : "APPROVER",
+    "middle_name" : "",
+    "profile_image" : "1612193911139.5085.jpg"
+}
